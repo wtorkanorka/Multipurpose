@@ -351,146 +351,122 @@ textarea {
   font-weight: 600;
 }
 
+:root {
+--main-color: #FFF7F4;
+--orange: #FF5300;
+}
+
 body {
   width: 100%;
   margin: 0 auto;
 }
 
-
-.h2 {
-  font-family: Work Sans;
-
-font-weight: 600;
-font-size: 39.06px;
-line-height: 123.6%;
-}
-
-header {
+.header {
   height: 100px;
-  align-items: center;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-
-  width: 100%;
+  align-items: center;
 }
 
-header button {
-  border: none;
-  outline: none;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-header nav ul {
+.menu__list {
   display: flex;
-  list-style-type: none;
   gap: 38px;
-  color: black;
+}
+.item__link {
+  font-family: WorkSans-Medium;
+  text-decoration: none;
   font-weight: 500;
   font-size: 20px;
   line-height: 123.6%;
-  font-family: WorkSans-Medium;
-}
-
-header nav ul li a {
-  text-decoration: none;
   color: black;
 }
 
-.logo-header {
-  width: 162px;
-  height: 48px;
+.hero__section {
+  background-color: var(--main-color);
+   width: 100%;
+   -webkit-box-shadow: 0px 4px 5px -5px rgba(34, 60, 80, 0.6) inset;
+-moz-box-shadow: 0px 4px 5px -5px rgba(34, 60, 80, 0.6) inset;
+box-shadow: 0px 4px 5px -5px rgba(34, 60, 80, 0.6) inset;
 }
 
-.background-hero {
-  background-color: #fff7f4;
-  width: 100%;
-  -webkit-box-shadow: 0px 6px 5px -6px rgba(34, 60, 80, 0.6) inset;
-  -moz-box-shadow: 0px 6px 5px -6px rgba(34, 60, 80, 0.6) inset;
-  box-shadow: 0px 6px 5px -6px rgba(34, 60, 80, 0.6) inset;
-}
 .hero {
+  position: relative;
   width: 100%;
-  display: flex;
   padding-top: 153px;
   padding-bottom: 153px;
+  display: flex;
+  /* background: #FFF7F4; */
+  align-items: center;
+  justify-content: space-between;
+  
 }
 
-.hero h1 {
-  font-family: WorkSans-Medium;
+.agency__title {
   font-weight: bold;
-  font-size: 48px;
-  line-height: 123.6%;
-  margin-bottom: 18px;
-  margin-top: 50px;
-  max-width: 440px;
+font-size: 48px;
+line-height: 123.6%;
+font-family: WorkSans-Medium;
+max-width: 440px;
+margin-bottom: 11px;
 }
 
-.hero h3 {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150.6%;
+.agency__description {
   font-family: WorkSans-Medium;
-  color: #7b7b7b;
-  margin-bottom: 50px;
-  max-width: 493px;
+  font-weight: normal;
+font-size: 16px;
+line-height: 150.6%;
+color: #7B7B7B;
+max-width: 493px;
 }
 
-.hero button {
-  background-color: #ff5300;
-  box-shadow: 0px 1px 10px rgba(255, 83, 0, 1);
-  border-radius: 5px;
+.agency__title-span {
+  color: var(--orange);
+}
+
+.agency__button {
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  color: white;
   border: none;
   outline: none;
-  max-width: 150px;
-  height: 50px;
-  font-family: WorkSans-Medium;
-  font-weight: 500;
-  color: white;
-  font-size: 20px;
-  line-height: 123.6%;
+  align-items: center;
+  background: var(--orange);
+box-shadow: 0px 1px 10px rgba(255, 83, 0, 1);
+border-radius: 5px;
+font-family: WorkSans-Medium;
+margin-top: 50px;
 }
 
-.hero-first-chapter {
-  margin-right: 35px;
-}
-.hero-h1 {
-  color: #ff5300;
-}
-
-.hero-image img {
-  width: 100%;
-}
-.hero-third-chapter {
+.social__icons {
   position: absolute;
   right: 0;
-  margin-top: 217px;
+ margin-top: 217px;
+ margin-bottom: 343px;
 }
 
-.hero-third-chapter ul {
-  list-style-type: none;
-}
-
-.hero-third-chapter ul li button {
+.icons__item_link button{
   width: 40px;
   height: 40px;
   background-color: white;
-  margin-top: 5px;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 0;
-  padding: 0;
   border: none;
+  outline: none;
+  margin-top: 5px;
 }
 
-.hero-third-chapter ul li img {
-  margin: 0 auto;
+
+
+.item_link-button--active:active {
+background-color: var(--orange);
+
 }
+  
 
 /* пк */
-@media (min-width: 769px) {
-  .mobile-header {
-    display: none;
-  }
 
+@media (min-width: 769px) {
   .page-width {
     width: 1170px;
 
@@ -506,30 +482,6 @@ header nav ul li a {
     max-width: 710px;
     margin: 0 auto;
   }
-
-  header nav ul {
-    display: flex;
-    list-style-type: none;
-    gap: 25px;
-    color: black;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 123.6%;
-    font-family: WorkSans-Medium;
-  }
-  .logo-header {
-    width: 83px;
-    height: 25px;
-    margin-right: 28px;
-  }
-
-  .mobile-header {
-    display: none;
-  }
-
-  .hero h1 {
-    font-size: 39px;
-  }
 }
 
 /* Телефон */
@@ -539,50 +491,5 @@ header nav ul li a {
     padding-right: 16px;
     max-width: 100%;
     margin: 0 auto;
-  }
-
-  .mobile-header {
-    display: flex;
-    box-shadow: none;
-  }
-
-  .logo__header {
-    width: 102px;
-  }
-
-.mobile__header_logo {
-  width: 102px;
-}
-
-  .hero {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-  }
-
-  .hero h1 {
-    text-align: center;
-  }
-
-  .hero h3 {
-    text-align: center;
-    margin-bottom: 25px;
-  }
-
-  .hero-image img {
-    width: 100%;
-    height: 225px;
-  }
-  .desktop-header {
-    display: none;
-  }
-
-  .hero-third-chapter {
-    display: none;
-  }
-  .hero-first-chapter {
-    margin-right: 0;
   }
 }
