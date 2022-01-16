@@ -379,8 +379,13 @@ body {
   color: black;
 }
 
-.hero__section {
+.background-section {
   background-color: var(--main-color);
+  width: 100%;
+}
+
+.hero__section {
+  
   width: 100%;
   -webkit-box-shadow: 0px 4px 5px -5px rgba(34, 60, 80, 0.6) inset;
   -moz-box-shadow: 0px 4px 5px -5px rgba(34, 60, 80, 0.6) inset;
@@ -570,6 +575,31 @@ body {
   flex-direction: column;
   padding-bottom: 21px;
 }
+
+/* .our-expirience__blocks-position {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-expirience__blocks {
+display: flex;
+flex-wrap: wrap;
+}
+
+
+.block {
+  width: 270px;
+  height: 250px;
+  background-color: white;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  gap: 30px;
+}
+
+.blocks-margin {
+  margin-bottom: 23px;
+} */
 
 /* пк */
 
