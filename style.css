@@ -576,14 +576,19 @@ body {
   padding-bottom: 21px;
 }
 
-/* .our-expirience__blocks-position {
+.our-expirience__blocks-position {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 
-.our-expirience__blocks {
+.our-experience {
+  padding: 60px 60px;
+}
+.our-experience__blocks {
 display: flex;
-flex-wrap: wrap;
+gap: 30px;
+flex-direction: column;
 }
 
 
@@ -595,15 +600,33 @@ flex-wrap: wrap;
   align-items: center;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
   gap: 30px;
+  text-align: center;
+  
 }
 
-.blocks-margin {
-  margin-bottom: 23px;
-} */
+.blocks__title {
+  font-weight: bold;
+font-size: 48px;
+line-height: 123.6%;
+margin-bottom:18px;
+margin-top: 78px;
+}
+
+.blocks__margin {
+  gap: 30px;
+  display: flex;
+}
+
+.blocks__description {
+  font-weight: 500;
+font-size: 20px;
+line-height: 123.6%;
+color: #7B7B7B;
+}
 
 /* пк */
 
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   .page-width {
     width: 1170px;
 
@@ -621,7 +644,7 @@ flex-wrap: wrap;
 }
 
 /* Планшет */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .page-width {
     width: 1170px;
     margin: 0 auto;
@@ -661,11 +684,7 @@ flex-wrap: wrap;
   }
 
   .cagency__desription {
-    /* font-family: WorkSans-Medium;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 150.6%;
-    color: #7b7b7b; */
+   
     max-width: 332px;
   }
 
@@ -693,6 +712,42 @@ flex-wrap: wrap;
     margin-top: 50%;
     max-width: 372px;
   }
+
+.block {
+  width: 162px;
+  height: 150px;
+}
+
+.blocks__title {
+  font-weight: 500;
+font-size: 25px;
+line-height: 123.6%;
+margin-top: 43px;
+margin-bottom: 10px;
+}
+
+.blocks__description {
+  font-weight: normal;
+font-size: 16px;
+line-height: 150.6%;
+color: #7B7B7B;
+}
+.our-experience__blocks , .blocks__margin {
+  gap: 8px;
+}
+
+.img-title__button {
+  margin-top: 32px;
+}
+
+.our-expirience__blocks-position {
+  gap: 24px;
+}
+
+.our-experience__blocks {
+  margin-top: 105px;
+}
+
 }
 
 /* Телефон */
@@ -806,4 +861,44 @@ flex-wrap: wrap;
     gap: 30px;
     margin-top: 50px;
   }
+
+  .our-experience {
+  padding-top: 50px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.our-expirience__blocks-position {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.blocks__margin {
+  display: flex;
+  flex-direction: column;
+}
+  
+.blocks__title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.blocks__description {
+  font-weight: 500;
+font-size: 25px;
+line-height: 123.6%;
+}
+
+.block {
+  width: 100%;
+  padding: 0;
+  height: 250px;
+}
+
+.blocks__title {
+  margin-top: 71px;
+  margin-bottom: 18px;
+}
+
 }
