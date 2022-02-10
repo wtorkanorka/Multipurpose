@@ -1079,13 +1079,13 @@ body {
 }
 
 .footer-underground__color {
-background-color: var(--orange);  
-height: 60px;
+  background-color: var(--orange);
+  height: 60px;
 }
 
 .footer__underground {
-  height: inherit; 
-  align-items: center; 
+  height: inherit;
+  align-items: center;
 }
 
 .underground__element-position {
@@ -1656,6 +1656,51 @@ height: 60px;
     margin-top: 120px;
     margin-bottom: 120px;
   }
+
+  .column-first__first-element {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 123.6%;
+    margin-bottom: 18px;
+  }
+
+  .column-first__second-element {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150.6%;
+  }
+  .social-icons__item {
+    gap: 11px;
+  }
+  .icons__item_link-footer button {
+    width: 30px;
+    height: 30px;
+  }
+  .item__link_img-footer {
+    height: 15px;
+  }
+  .footer-columns__column h2 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 123.6%;
+  }
+  .column-first__third-element input {
+    width: 154px;
+    height: 40px;
+  }
+  .input-button {
+    height: 40px;
+    width: 35px;
+  }
+
+  .footer__footer-columns {
+    gap: 20px;
+  }
+  .footer__footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /* Телефон */
@@ -2086,5 +2131,22 @@ height: 60px;
   .prints {
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+
+  .footer__footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column-first__third-element input {
+    width: 100%;
+    height: 60px;
+  }
+
+  .input-button {
+    width: 81px;
+    height: 60px;  
+  }
+  .footer__footer-columns {
+    padding-bottom: 50px;
   }
 }
