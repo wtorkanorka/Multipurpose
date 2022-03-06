@@ -1112,7 +1112,74 @@ body {
   display: flex;
   justify-content: space-between;
 }
+#umbrella {
+  animation-name: umbrella;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+#agency {
+  animation-name: agency;
+  animation-duration: 1.5s;
+}
+header {
+  animation-name: header;
+  animation-duration: 1.5s;
+}
+#about-us__title {
+  animation-name: about-us__title;
+  animation-duration: 1.5s;
 
+  animation-timing-function: ease-in-out;
+}
+@keyframes umbrella{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes agency {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes header {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes about-us__img-title {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 /* пк */
 
 @media (min-width: 1025px) {
