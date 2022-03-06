@@ -456,7 +456,19 @@ body {
   outline: none;
   margin-top: 5px;
 }
+.item_link-button--facebook img:active{
+  display: none;
+}
+.item_link-button--instagram img:active {
 
+  display: none;
+}
+.item_link-button--twitter img:active {
+  display: none;
+}
+.item_link-button--skype img:active {
+  display: none;
+}
 .item_link-button--facebook:active {
   background-color: var(--orange);
   background-image: url(assets/facebook-white.svg);
@@ -467,6 +479,7 @@ body {
 }
 
 .item_link-button--instagram:active {
+  
   background-color: var(--orange);
   background-image: url(assets/instagram-white.svg);
   background-repeat: no-repeat;
